@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concentration Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input {
+            padding: 8px;
+            margin: 10px;
+            width: 200px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #result {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        function calculateConcentration() {
+            var amount = parseFloat(document.getElementById("amount").value);
+            var volume = parseFloat(document.getElementById("volume").value);
+
+            if (isNaN(amount) || isNaN(volume) || amount < 0 || volume <= 0) {
+                alert("Please enter valid values for amount and volume.");
+                return;
+            }
+
+            var concentration = amount / volume;
+
+            document.getElementById("result").innerHTML = "Concentration: " + concentration.toFixed(2) + " mol/L";
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Concentration Calculator</h2>
+    <label for="amount">Amount of Solute (mol):</label>
+    <input type="number" id="amount" step="any" required>
+
+    <br>
+
+    <label for="volume">Volume of Solution (L):</label>
+    <input type="number" id="volume" step="any" required>
+
+    <br>
+
+    <button onclick="calculateConcentration()">Calculate</button>
+
+    <div id="result"></div>
+</body>
+
+</html>
