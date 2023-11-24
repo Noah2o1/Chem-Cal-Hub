@@ -1,10 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Chemistey Calculator Hub</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemistry Calculator Hub</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden; /* Prevent video overflow */
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        video {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+        #container {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.8); /* Add transparency to the background */
+            position: absolute;
+            z-index: 1; /* Ensure the container is on top of the video */
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+        }
+
+        input {
+            padding: 10px;
+            margin: 10px 0;
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
     <script>
-        var correctPassword = "MSTN"; // Set your desired password
+        var correctPassword = "MSTN";
 
         function authenticate() {
             var password = document.getElementById("password").value;
@@ -14,13 +85,41 @@
                 alert("Incorrect password. Access denied.");
             }
         }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var video = document.querySelector('video');
+            var reversed = false;
+
+            video.addEventListener('timeupdate', function () {
+                if (video.currentTime >= video.duration - 0.1 && !reversed) {
+                    reversed = true;
+                    video.pause();
+                    video.currentTime = 0;
+                    video.playbackRate = -1;
+                    video.play();
+                } else if (video.currentTime <= 0.1 && reversed) {
+                    reversed = false;
+                    video.pause();
+                    video.currentTime = 0.1;
+                    video.playbackRate = 1;
+                    video.play();
+                }
+            });
+
+            video.play();
+        });
     </script>
 </head>
 
 <body>
-    <div>
-        <h1>Chemistey Calculator Hub</h1>
-        <p>Enter Corrcet Access Code :</p>
+    <video autoplay muted playsinline>
+        <source src="videos/login.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="container">
+        <h1>Chemistry Calculator Hub</h1>
+        <p>Enter Correct Access Code:</p>
         <input type="password" id="password">
         <button onclick="authenticate()">Enter</button>
     </div>
