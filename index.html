@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chemistey Calculator Hub</title>
+    <script>
+        var correctPassword = "MSTN"; // Set your desired password
+
+        function authenticate() {
+            var password = document.getElementById("password").value;
+            if (password === correctPassword) {
+                window.location.href = "chemistry_calculator_hub.html";
+            } else {
+                alert("Incorrect password. Access denied.");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <h1>Chemistey Calculator Hub</h1>
+        <p>Enter Corrcet Access Code :</p>
+        <input type="password" id="password">
+        <button onclick="authenticate()">Enter</button>
+    </div>
+</body>
+
+</html>
