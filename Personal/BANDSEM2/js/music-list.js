@@ -17,22 +17,22 @@ let allMusic = [
     src: "music-1"
   },
   {
-    name: "MY EYES - Utopia",
-    artist: "Travis Scooooooooooott",
-    img: "music-2",
+    name: "Celtic Ballad",
+    artist: "Wesley Kennedy",
+    img: "music-1",
     src: "music-2"
   },
   {
-    name: "ppee",
-    artist: "Travis Scott",
-    img: "music-2",
-    src: "music-2"
+    name: "Drums of Corona",
+    artist: "Michael Sweeney",
+    img: "music-1",
+    src: "music-3"
   },
   {
-    name: "ppee",
-    artist: "Travis Scott",
-    img: "music-2",
-    src: "music-2"
+    name: "Quintessence",
+    artist: "unknown",
+    img: "music-1",
+    src: "music-4"
   },
 
   // like this paste it and remember to give comma after ending of this bracket }
