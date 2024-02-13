@@ -16,24 +16,28 @@ let allMusic = [
     img: "music-1",
     src: "04 Dark Ride by Randall D. Standridge - CHIJ Katong Convent Concert Band"
   },
+
   {
     name: "New Orelas Strut",
     artist: "",
     img: "music-1",
     src: "New Orleans Strut - Concert Band"
   },
+
   {
     name: "Celtic Ballad (AMS)",
     artist: "Wesley Kennedy",
     img: "music-1",
     src: "Celtic Ballad (AMS)"
   },
+
   {
     name: "Drums of Corona",
     artist: "Michael Sweeney",
     img: "music-1",
     src: "Drums of Corona-Michael Sweeney (ASCAP)"
   },
+  
   {
     name: "Gymnopédie No. 1",
     artist: "",
