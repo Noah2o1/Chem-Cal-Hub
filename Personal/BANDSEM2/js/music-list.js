@@ -11,13 +11,19 @@
 
 let allMusic = [
   {
-    name: "Faithful",
-    artist: "Three Piolts",
+    name: "Dark Ride",
+    artist: "Randall D. Standridge",
     img: "music-1",
-    src: "music-1"
+    src: "04 Dark Ride by Randall D. Standridge - CHIJ Katong Convent Concert Band"
   },
   {
     name: "MY EYES - Utopia",
+    artist: "Travis Scott",
+    img: "music-2",
+    src: "music-2"
+  },
+  {
+    name: "ppee",
     artist: "Travis Scott",
     img: "music-2",
     src: "music-2"
