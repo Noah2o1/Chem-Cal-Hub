@@ -11,7 +11,7 @@
 
 let allMusic = [
   {
-    name: "DarkRide",
+    name: "DarkRide22",
     artist: "Randall D. Standridge",
     img: "music-1",
     src: "04 Dark Ride by Randall D. Standridge - CHIJ Katong Convent Concert Band"
@@ -37,7 +37,7 @@ let allMusic = [
     img: "music-1",
     src: "Drums of Corona-Michael Sweeney (ASCAP)"
   },
-  
+
   {
     name: "Gymnopédie No. 1",
     artist: "",
