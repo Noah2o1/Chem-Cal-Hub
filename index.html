@@ -10,26 +10,25 @@
       <li><a href="Public/table/table.html">SCHU3 Periodic Table</a></li>
       <li><a href="Public/whiteboard.html">Very Basic Whiteboard</a></li>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Classes</title>
-    <script>
-        function checkPassword() {
-            var password = document.getElementById("password").value;
-        // password 
-            if (password === "MSTN") {
-                // Redirect to the new page
-                window.location.href ="Personal/Personalhub.html"; 
-            } else {
-                alert("if you failed that, you probably shouldn't be getting in this");
-            }
-        }
-    </script>
-</head>
-<body>
-    <h1>Personal Classes</h1>
-    <p>Please enter the password to access the new page:</p>
-    <input type="password" id="password">
-    <button onclick="checkPassword()">Submit</button>
-</body>
-</html>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Personal Classes</title>
+      <script>
+          function checkPassword() {
+              var password = document.getElementById("password").value;
+              if (password === "MSTN") {
+                  // Redirect to the new page
+                  window.location.href = "Personal/Personalhub.html"; 
+              } else {
+                  alert("If you failed that, you probably shouldn't be getting in this.");
+              }
+          }
+      </script>
+  </head>
+  <body>
+      <h1>Personal Classes</h1>
+      <p>Please enter the password to access the new page:</p>
+      <input type="password" id="password">
+      <button onclick="checkPassword()">Submit</button>
+  </body>
+  </html>
