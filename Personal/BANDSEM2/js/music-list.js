@@ -12,9 +12,9 @@
 let allMusic = [
   {
     name: "Dark Ride",
-    artist: "Randall D. Standridge",
+    artist: "Randall Standridge",
     img: "music-1",
-    src: "04 Dark Ride by Randall D. Standridge - CHIJ Katong Convent Concert Band"
+    src: "music-1"
   },
   {
     name: "MY EYES - Utopia",
