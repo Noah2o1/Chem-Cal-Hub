@@ -18,7 +18,7 @@ let allMusic = [
   },
   {
     name: "MY EYES - Utopia",
-    artist: "Travis Scott",
+    artist: "Travis Scooooooooooott",
     img: "music-2",
     src: "music-2"
   },
