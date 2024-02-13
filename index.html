@@ -1,12 +1,7 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Chemistry Calculator Hub</title>
-</head>
-
-<body>
-    <h1>MSTN Hub</h1>
+ <h1>MSTN Hub</h1>
     <p>Chemistry Related Things</p>
     <p>Molar Mass and Peridoic Table For Public</p>
     <ul>
@@ -14,33 +9,26 @@
 
       <li><a href="table.html">SCHU3 Periodic Table</a></li>
 
-      <p>Band Related</p>
-
-      <li><a href="add new">Molar Mass Calculator</a></li>
-
-      <meta charset-"UTF-8"
-        <meta name="viewport" content="width=device-width", inital-scale="1.0">
-        <title> Personal Classes</title>   
-        <script>
-            function checkPassword() {
-                var password = document.getElementById("password").value;
-                // password below
-                if (password === "6y2q8y8R") {
-                    window.location.href = "newpage.html"; // <--- redirect is there
-                } else {
-                    alert("If you got this wrong you're probably not supposed to be trying to get in.")
-                }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Classes</title>
+    <script>
+        function checkPassword() {
+            var password = document.getElementById("password").value;
+        // password 
+            if (password === "MSTN") {
+                // Redirect to the new page
+                window.location.href = "Personalclasses.hmtl"; 
+            } else {
+                alert("if you failed that, you probably shouldn't be getting in this");
             }
-        </script>
+        }
+    </script>
 </head>
 <body>
-    <h1>Personal Class</h1>
-    <p>Please enter the password to access the page</p>
-    <input type="password" id="passwprd">
-    <button onclick="checkPassword()">Submut</button>
+    <h1>Password Protected Page</h1>
+    <p>Please enter the password to access the new page:</p>
+    <input type="password" id="password">
+    <button onclick="checkPassword()">Submit</button>
 </body>
-
-    </ul>
-</body>
-
 </html>
