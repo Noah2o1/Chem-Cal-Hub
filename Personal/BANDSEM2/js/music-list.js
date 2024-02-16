@@ -4,7 +4,7 @@ let allMusic = [
   {
     name: "Dark Ride",
     artist: "Randall Standridge",
-    img: "music-1",
+    img: "IMG_5479",
     src: "music-1"
   },
   {
