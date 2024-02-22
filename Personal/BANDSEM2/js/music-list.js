@@ -14,43 +14,43 @@ let allMusic = [
     name: "DarkRide",
     artist: "Randall D. Standridge",
     img: "music-1",
-    src: "04 Dark Ride by Randall D. Standridge - CHIJ Katong Convent Concert Band"
+    src: "music-1"
   },
   {
-    name: "",
-    artist: "",
-    img: "",
-    src: ""
+    name: "Celtic Ballad",
+    artist: "Kennedy Wesley",
+    img: "music-1",
+    src: "music-2"
   },
   {
-    name: "",
-    artist: "",
-    img: "",
-    src: ""
+    name: "Drums of Corona",
+    artist: "idk",
+    img: "music-1",
+    src: "music-3"
   },
   {
-    name: "",
-    artist: "",
-    img: "",
-    src: ""
+    name: "Quintessence",
+    artist: "idk",
+    img: "music-1",
+    src: "music-4"
   },
   {
-    name: "",
-    artist: "",
-    img: "",
-    src: ""
+    name: "Gymnopedie",
+    artist: "idk",
+    img: "music-1",
+    src: "music-5"
   },
   {
-    name: "",
-    artist: "",
-    img: "",
-    src: ""
+    name: "New Orleans Strut",
+    artist: "idk",
+    img: "music-1",
+    src: "music-6"
   },
   {
-    name: "",
-    artist: "",
-    img: "",
-    src: ""
+    name: "Magnificant Seven",
+    artist: "idk",
+    img: "music-1",
+    src: "music-6"
   },
   {
     name: "",
