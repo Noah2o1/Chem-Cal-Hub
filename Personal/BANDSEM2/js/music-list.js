@@ -50,13 +50,8 @@ let allMusic = [
     name: "Magnificant Seven",
     artist: "idk",
     img: "music-1",
-    src: "music-6"
-  },
-  {
-    name: "",
-    artist: "",
-    img: "",
-    src: ""
+    src: "music-1"
+    
   },
   
 
